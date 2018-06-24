@@ -34,5 +34,19 @@ body.auth {
       padding: 32px 40px;
     }
   }
-}
 
+  // Component
+  .box {
+    .title {
+      display: block;
+      font-size: 2.25rem;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .sub-title {
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+  }
+}

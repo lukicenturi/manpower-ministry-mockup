@@ -1,6 +1,6 @@
 body.auth {
   .container {
-    padding-bottom: 90px;
+    padding: 0 16px 90px;
   }
 
   .top-bar {
@@ -16,8 +16,7 @@ body.auth {
   }
 
   .auth-form {
-    width: 90%;
-    margin: -73px auto 32px;
+    margin: -73px 0 32px;
     padding: 32px 24px;
     .form-group {
       margin-bottom: 24px;

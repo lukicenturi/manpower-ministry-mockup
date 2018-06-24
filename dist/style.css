@@ -6,7 +6,6 @@ a {
   font-weight: bold; }
 
 main {
-  background: aquamarine;
   height: 200px; }
 
 .logo, .navbar-brand {
@@ -9823,7 +9822,7 @@ readers do not read off random characters that represent icons */
   font-style: normal;
   font-weight: 900;
   src: url(d9824d00712532d7697df68df16ae0d3.eot);
-  src: url(d9824d00712532d7697df68df16ae0d3.eot?#iefix) format("embedded-opentype"), url(18d2347ab2a9f40ca2247cdb03303d84.woff2) format("woff2"), url(128d2b0be23925e5cf36717ddc6f093b.woff) format("woff"), url(00ddaede094b83270cadbfc1a907e8ca.ttf) format("truetype"), url(d55c4d9df73c8874911e1a4252c0a54a.svg#fontawesome) format("svg"); }
+  src: url(d9824d00712532d7697df68df16ae0d3.eot?#iefix) format("embedded-opentype"), url(18d2347ab2a9f40ca2247cdb03303d84.woff2) format("woff2"), url(128d2b0be23925e5cf36717ddc6f093b.woff) format("woff"), url(00ddaede094b83270cadbfc1a907e8ca.ttf) format("truetype"), url(666a82cb3e9f8591bef4049aea26c4c6.svg#fontawesome) format("svg"); }
 
 .fa,
 .fas {
@@ -9925,7 +9924,7 @@ footer {
       margin-right: 0; }
 
 body.auth .container {
-  padding-bottom: 90px; }
+  padding: 0 16px 90px; }
 
 body.auth .top-bar {
   background: #154069;
@@ -9938,8 +9937,7 @@ body.auth .top-bar {
     display: block; }
 
 body.auth .auth-form {
-  width: 90%;
-  margin: -73px auto 32px;
+  margin: -73px 0 32px;
   padding: 32px 24px; }
   body.auth .auth-form .form-group {
     margin-bottom: 24px; }

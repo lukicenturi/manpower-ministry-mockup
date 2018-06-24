@@ -1,0 +1,19 @@
+$primary: #154069 !default;
+$white: #ffffff !default;
+
+$font-family-base: "IBM Plex Sans", sans-serif !default;
+
+// Navigation
+$navbar-height: 40px;
+
+// Auth
+$top-bar-height: 227px;
+$mobile-top-bar-height: 227px;
+
+// Box
+$box-background: $white;
+$box-radius: 5px;
+$box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.06);
+
+// Font Awesome
+$fa-font-path: "../webfonts";

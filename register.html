@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrasi</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="dist/style.css"/>
+</head>
+<body class="auth">
+    <section class="top-bar">
+        <img class="logo" src="images/logo.png"/>
+    </section>
+    <main class="container">
+        <div class="box auth-form">
+            <span class="title">Registrasi</span>
+            <form>
+                <div class="sub-title">
+                    <span class="round-badge">1</span>
+                    BIODATA
+                </div>
+                <div class="form-group">
+                    <label for="nik">Nomor Induk Kependudukan (NIK)</label>
+                    <input type="text" id="nik" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="tanggal-lahir">Tanggal Lahir</label>
+                    <input type="text" id="tanggal-lahir" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <textarea id="alamat" class="form-control"></textarea>
+                </div>
+                <div class="sub-title">
+                    <span class="round-badge">2</span>
+                    AKUN
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor Handphone</label>
+                    <input type="text" id="phone" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Daftar Sekarang</button>
+            </form>
+        </div>
+        <div class="text-center">
+            Sudah memiliki akun? <a href="login.html">Masuk Sekarang</a>
+        </div>
+    </main>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+</html>

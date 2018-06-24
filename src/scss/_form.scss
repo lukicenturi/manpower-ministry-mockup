@@ -1,0 +1,21 @@
+.form-group {
+  label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  input, textarea {
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+    font-size: 1.5rem;
+    height: 44px;
+    &:focus {
+      box-shadow: none;
+      background: white;
+      opacity: 1;
+    }
+  }
+  textarea {
+    height: 80px;
+    resize: none;
+  }
+}

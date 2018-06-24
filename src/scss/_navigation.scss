@@ -1,24 +1,45 @@
-nav {
-  .top-bar {
-    background: $top-bar-color;
-    color: $white;
-    font-size: 0.85rem;
-    .container {
-      padding: 12px 15px;
-      line-height: 1rem;
-      .title {
-        opacity: 0.54;
-        font-weight: bold;
-        margin-right: 12px;
+.top-bar {
+  background: $top-bar-color;
+  color: $white;
+  font-size: 0.85rem;
+  .container {
+    padding: 12px 15px;
+    line-height: 1rem;
+    .title {
+      opacity: 0.54;
+      font-weight: bold;
+      margin-right: 12px;
+    }
+    a {
+      color: $white;
+      font-size: 1rem;
+      font-weight: normal;
+      margin: 0 5px;
+      &:last-child {
+        margin-right: 0;
       }
-      a {
-        color: $white;
-        font-size: 1rem;
-        font-weight: normal;
+      &:first-child {
+        margin-left: 0;
       }
     }
   }
-  .navigation-bar {
-    background: transparent;
+}
+
+nav.navbar {
+  padding-top: 16px;
+  height: 85px;
+  margin-bottom: -85px;
+  .navbar-brand {
+    padding: 0;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: $white;
+      padding: 0 1rem;
+    }
   }
 }

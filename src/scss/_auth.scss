@@ -1,4 +1,8 @@
 body.auth {
+  .container {
+    padding-bottom: 90px;
+  }
+
   .top-bar {
     background: $primary;
     height: $top-bar-height;

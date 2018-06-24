@@ -7,6 +7,12 @@ a {
   font-weight: bold;
 }
 
-.container {
-  padding-bottom: 90px;
+main {
+  background: aquamarine;
+  height: 200px;
+}
+
+.logo, .navbar-brand {
+  width: 162px;
+  height: 58px;
 }

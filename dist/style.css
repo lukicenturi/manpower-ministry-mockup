@@ -9860,11 +9860,30 @@ readers do not read off random characters that represent icons */
   height: 80px;
   resize: none; }
 
-body.auth section.top-bar {
+nav .top-bar {
+  background: #002d58;
+  color: #ffffff;
+  font-size: 0.85rem; }
+  nav .top-bar .container {
+    padding: 12px 15px;
+    line-height: 1rem; }
+    nav .top-bar .container .title {
+      opacity: 0.54;
+      font-weight: bold;
+      margin-right: 12px; }
+    nav .top-bar .container a {
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: normal; }
+
+nav .navigation-bar {
+  background: transparent; }
+
+body.auth .top-bar {
   background: #154069;
   height: 227px;
   padding-top: 56px; }
-  body.auth section.top-bar img.logo {
+  body.auth .top-bar img.logo {
     width: 154px;
     height: 53px;
     margin: auto;

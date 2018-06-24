@@ -1,0 +1,24 @@
+nav {
+  .top-bar {
+    background: $top-bar-color;
+    color: $white;
+    font-size: 0.85rem;
+    .container {
+      padding: 12px 15px;
+      line-height: 1rem;
+      .title {
+        opacity: 0.54;
+        font-weight: bold;
+        margin-right: 12px;
+      }
+      a {
+        color: $white;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+    }
+  }
+  .navigation-bar {
+    background: transparent;
+  }
+}

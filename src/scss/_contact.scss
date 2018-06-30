@@ -1,0 +1,40 @@
+body.contact {
+  .auth-form {
+    margin: -73px 0 32px;
+    padding: 32px 24px;
+    .form-group {
+      margin-bottom: 24px;
+    }
+    .btn {
+      padding: 13px 0;
+      width: 100%;
+      margin-bottom: 32px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    .auth-form {
+      width: 470px;
+      padding: 32px 40px;
+      margin: -73px auto 32px;
+    }
+  }
+
+  // Component
+  .box {
+    .title {
+      display: block;
+      font-size: 2.25rem;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .sub-title {
+      font-size: 0.85rem;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.news-tab{
+  background: $primary;
+  padding: 150px 0 0;
+  color: $white;
+}
+
+.news{
+  &.slider{
+    padding: 0;
+    margin-bottom: 0;
+    height: auto;
+    #news-slider{
+      .carousel-inner{
+        .carousel-item{
+          .row{
+            position: relative;
+            left: auto;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            padding: 80px 0 20px;
+            background-size: cover;
+            .row-content{
+              >div{
+                .wrapper{
+                  text-align: left;
+                  box-shadow: none;
+                  background: transparent;
+                  .news-text{
+                    padding: 0;
+                    .news-description{
+                      color: $white;
+                    }
+                    .news-info{
+                      margin-bottom: 15px;
+                      .news-category{
+                        margin-right: 15px;
+                      }
+                      .news-date{
+                        color: white;
+                        opacity: 0.5;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .carousel-indicator-container{
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+        .carousel-indicators{
+          position: static;
+          left: auto;
+          bottom: auto;
+          right: auto;
+          margin: 0;
+          justify-content: flex-start;
+          li{
+            width: 10px;
+            height: 10px;
+            margin: 0 10px 0 0;
+            border-radius: $full-radius;
+          }
+        }
+      }
+    }
+  }
+
+  &.recent, &.popular{
+    background: $white;
+    height: auto;
+    padding: 0;
+    margin: 60px 0;
+  }
+}

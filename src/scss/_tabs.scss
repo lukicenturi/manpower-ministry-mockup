@@ -1,0 +1,46 @@
+.nav-tabs{
+  width: 100%;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .nav-link{
+    padding: 20px 0;
+    font-size: 1.2rem;
+    margin-right: 30px;
+    color: $gray;
+    border: none;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s all;
+    background: transparent;
+    &.active{
+      color: $primary;
+      border-bottom: 2px solid $primary;
+      background: transparent
+    }
+  }
+
+  &.invers{
+    border-bottom: none;
+    .nav-link{
+      color: white;
+      opacity: 0.5;
+      padding: 30px 0;
+      &.active{
+        border-bottom: 3px solid white;
+        opacity: 1;
+      }
+      &.search{
+        margin-left: auto;
+        margin-right: 0;
+        opacity: 1;
+        &:hover{
+          border: none;
+        }
+      }
+    }
+  }
+}
+

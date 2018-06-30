@@ -1,5 +1,11 @@
+$lighter: #21578C !default
 $primary: #154069 !default;
+$darken: #002D58 !default;
 $white: #ffffff !default;
+$gray: #6b6b6b !default;
+$soft-gray: #e4e4e4 !default;
+$softer-gray: #f6f6f6 !default;
+$twitter: #1E9FEF !default;
 
 $font-family-base: "IBM Plex Sans", sans-serif !default;
 
@@ -14,7 +20,9 @@ $mobile-top-bar-height: 227px;
 // Box
 $box-background: $white;
 $box-radius: 5px;
+$full-radius: 1000px;
 $box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.06);
+$drop-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
 
 // Font Awesome
 $fa-font-path: "../webfonts";

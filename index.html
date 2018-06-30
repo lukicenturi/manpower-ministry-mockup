@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="dist/style.css"/>
 </head>
-<body>
-    <section class="top-bar">
+<body class="index">
+    <section class="top-bar d-none d-lg-block">
         <div class="container">
             <div class="float-left">
                 <span class="title">NEWSFLASH</span>
@@ -19,71 +19,637 @@
             <div class="clearfix"></div>
         </div>
     </section>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container">
-            <a href="#" class="navbar-brand"><img src="images/logo.png"/></a>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="unit-kerja-dropdown"
-                        data-toggle="dropdown" aria-haspopup="true" role="button"
-                        aria-expanded="false">Unit Kerja</a>
-                    <div class="dropdown-menu" aria-labelledby="unit-kerja-dropdown">
-                        <a class="dropdown-item" href="#">Sekretariat Jendral</a>
-                        <a class="dropdown-item" href="#">Inspektorat Jendral</a>
-                        <a class="dropdown-item" href="#">BARENBANG</a>
-                        <a class="dropdown-item" href="#">BINALATTAS</a>
-                        <a class="dropdown-item" href="#">BINAPENTA & PKK</a>
-                        <a class="dropdown-item" href="#">PHI - JSK</a>
-                        <a class="dropdown-item" href="#">BINWASNAKER & K3</a>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Regulasi</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Penelitian & Info</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Data PMI</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="layanan-dropdown"
-                       data-toggle="dropdown" aria-haspopup="true" role="button"
-                       aria-expanded="false">Layanan</a>
-                    <div class="dropdown-menu" aria-labelledby="layanan-dropdown">
-                        <a class="dropdown-item" href="#">Sekretariat Jendral</a>
-                        <a class="dropdown-item" href="#">Inspektorat Jendral</a>
-                        <a class="dropdown-item" href="#">BARENBANG</a>
-                        <a class="dropdown-item" href="#">BINALATTAS</a>
-                    </div>
-                </li>
-            </ul>
+            <a href="index.html" class="navbar-brand"><img src="images/logo.png"/></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item d-flex d-lg-none auth-button row">
+                        <div class="wrapper col-6">
+                            <button class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="wrapper col-6">
+                            <button class="btn btn-primary">Sign Up</button>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="unit-kerja-dropdown"
+                           data-toggle="dropdown" aria-haspopup="true" role="button"
+                           aria-expanded="false">Unit Kerja</a>
+                        <div class="dropdown-menu" aria-labelledby="unit-kerja-dropdown">
+                            <a class="dropdown-item" href="#">Sekretariat Jendral</a>
+                            <a class="dropdown-item" href="#">Inspektorat Jendral</a>
+                            <a class="dropdown-item" href="#">BARENBANG</a>
+                            <a class="dropdown-item" href="#">BINALATTAS</a>
+                            <a class="dropdown-item" href="#">BINAPENTA & PKK</a>
+                            <a class="dropdown-item" href="#">PHI - JSK</a>
+                            <a class="dropdown-item" href="#">BINWASNAKER & K3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Berita</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Regulasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Penelitian & Info</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Data PMI</a></li>
+                    <li class="nav-item dropdown services">
+                        <a class="nav-link dropdown-toggle" href="#" id="layanan-dropdown"
+                           data-toggle="dropdown" aria-haspopup="true" role="button"
+                           aria-expanded="false"><i class="fa fa-th mr-2"></i>Layanan</a>
+                        <div class="dropdown-menu" aria-labelledby="layanan-dropdown">
+                            <div class="row">
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item col-6 col-sm-3" href="#">
+                                    <div class="wrapper">
+                                        <div class="icon">
+                                            <i class="fa fa-backspace"></i>
+                                        </div>
+                                        <h6 class="service-title">Pengaduan</h6>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <main>
+        <section class="banner banner-index" style="background-image: url('images/banner.png')">
+            <div class="container">
+                <h2 class="banner-title">Nikmati Layanan Kami</h2>
+                <p class="banner-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Commodi dolorum et maxime minus,
+                    obcaecati.
+                </p>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="wrapper">
+                            <div class="icon">
+                                <i class="fa fa-backspace"></i>
+                            </div>
+                            <h5 class="service-title">Pengaduan</h5>
+                            <p class="description service-description">
+                                Layanan untuk melaporkan masalah terkait tenaga kerja
+                            </p>
+                            <a href="#">Kunjungi Layanan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="statistik">
+            <div class="container">
+                <div class="statistik-header">
+                    <h2>Statistik</h2>
+                    <p class="description statistik-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Commodi dolorum et maxime minus,
+                        obcaecati.
+                    </p>
+                </div>
+                <div class="statistik-chart">
+                    <div class="nav nav-tabs" id="statistik-tab">
+                        <a class="nav-item nav-link active" id="info-tab" data-toggle="tab" href="#nav-info" role="tab" aria-controls="nav-info" aria-selected="true">Info Kerja</a>
+                        <a class="nav-item nav-link" id="pelatihan-tab" data-toggle="tab" href="#nav-pelatihan" role="tab" aria-controls="nav-pelatihan" aria-selected="false">Pelatihan</a>
+                        <a class="nav-item nav-link" id="pemagangan-tab" data-toggle="tab" href="#nav-pemagangan" role="tab" aria-controls="nav-pemagangan" aria-selected="false">Pemagangan</a>
+                        <a class="nav-item nav-link" id="pengaduan-tab" data-toggle="tab" href="#nav-pengaduan" role="tab" aria-controls="nav-pengaduan" aria-selected="false">Pengaduan</a>
+                        <a class="nav-item nav-link" id="wklp-tab" data-toggle="tab" href="#nav-wklp" role="tab" aria-controls="nav-wklp" aria-selected="false">WKLP</a>
+                    </div>
+                    <div class="tab-content" id="statistik-content">
+                        <div class="tab-pane show active" id="nav-info" role="tabpanel" aria-labelledby="info-tab">
+                            <div class="info-details row">
+                                <div class="col-12 col-sm-4 col-lg-3">
+                                    <h3 class="info-number">3,205,412</h3>
+                                    <div class="info-detail description">
+                                        Lowongan Terisi <b>(Dalam Negeri)</b>
+                                    </div>
+                                    <div class="info-bar">
+                                        <div class="info-fill" style="width:80%"></div>
+                                    </div>
+                                    <div class="info-total description">
+                                        Total Lowongan <b>4,575,004</b>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-lg-3">
+                                    <h3 class="info-number">16,655,928</h3>
+                                    <div class="info-detail description">
+                                        Lowongan Terisi <b>(Luar Negeri)</b>
+                                    </div>
+                                    <div class="info-bar">
+                                        <div class="info-fill" style="width:80%"></div>
+                                    </div>
+                                    <div class="info-total description">
+                                        Total Lowongan <b>4,575,004</b>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-lg-3">
+                                    <h3 class="info-number">40,512</h3>
+                                    <div class="info-detail description">
+                                       Job Fair Tersedia
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-charts">
+                                <div id="info-chart">
 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="nav-pelatihan" role="tabpanel" aria-labelledby="pelatihan-tab">
+                            2
+                        </div>
+                        <div class="tab-pane" id="nav-pemagangan" role="tabpanel" aria-labelledby="pemagangan-tab">
+                            3
+                        </div>
+                        <div class="tab-pane" id="nav-pengaduan" role="tabpanel" aria-labelledby="pengaduan-tab">
+                            <div class="info-details row text-center">
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <h5>Pemutusan Hubungan Kerja</h5>
+                                    <div class="info-circle">
+                                        <div class="info-percentage">
+                                            75%
+                                        </div>
+                                    </div>
+                                    <h3 class="info-number">302,205</h3>
+                                    <p class="info-detail description">
+                                        Pengaduan terselesaikan
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <h5>Pemutusan Hubungan Kerja</h5>
+                                    <div class="info-circle">
+                                        <div class="info-percentage">
+                                            75%
+                                        </div>
+                                    </div>
+                                    <h3 class="info-number">302,205</h3>
+                                    <p class="info-detail description">
+                                        Pengaduan terselesaikan
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <h5>Pemutusan Hubungan Kerja</h5>
+                                    <div class="info-circle">
+                                        <div class="info-percentage">
+                                            75%
+                                        </div>
+                                    </div>
+                                    <h3 class="info-number">302,205</h3>
+                                    <p class="info-detail description">
+                                        Pengaduan terselesaikan
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <h5>Pemutusan Hubungan Kerja</h5>
+                                    <div class="info-circle">
+                                        <div class="info-percentage">
+                                            75%
+                                        </div>
+                                    </div>
+                                    <h3 class="info-number">302,205</h3>
+                                    <p class="info-detail description">
+                                        Pengaduan terselesaikan
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <h5>Pemutusan Hubungan Kerja</h5>
+                                    <div class="info-circle">
+                                        <div class="info-percentage">
+                                            75%
+                                        </div>
+                                    </div>
+                                    <h3 class="info-number">302,205</h3>
+                                    <p class="info-detail description">
+                                        Pengaduan terselesaikan
+                                    </p>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4">
+                                    <h5>Pemutusan Hubungan Kerja</h5>
+                                    <div class="info-circle">
+                                        <div class="info-percentage">
+                                            75%
+                                        </div>
+                                    </div>
+                                    <h3 class="info-number">302,205</h3>
+                                    <p class="info-detail description">
+                                        Pengaduan terselesaikan
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="nav-wklp" role="tabpanel" aria-labelledby="wklp-tab">
+                            <div class="info-details row">
+                                <div class="col-6 col-sm-3">
+                                    <h3 class="info-number">16,342</h3>
+                                    <div class="info-detail description">
+                                        Total Perusahaan Mikro
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <h3 class="info-number">6,435</h3>
+                                    <div class="info-detail description">
+                                        Total Perusahaan Kecil
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <h3 class="info-number">4,607</h3>
+                                    <div class="info-detail description">
+                                        Total Perusahaan Menengah
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <h3 class="info-number">1,865</h3>
+                                    <div class="info-detail description">
+                                        Total Perusahaan Besar
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="news-header col-12 col-lg-6">
+                        <h2>Berita Terbaru</h2>
+                        <p class="description news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Commodi dolorum et maxime minus,
+                            obcaecati.
+                        </p>
+                    </div>
+                    <div class="news-more col-12 col-lg-6 d-flex justify-content-lg-end justify-content-center order-3 order-lg-0 mt-5">
+                        <a href="news.html">
+                            <button type="submit" class="btn btn-primary">Lihat lebih banyak</button>
+                        </a>
+                    </div>
+                    <div class="row row-content">
+                        <div class="col-12 col-lg-12">
+                            <div class="wrapper">
+                                <div class="news-image col-12 col-lg-6">
+                                    <img src="images/banner.png" alt="news">
+                                </div>
+                                <div class="news-text col-12 col-lg-6">
+                                    <div class="news-info">
+                                        <div class="news-category">BERITA NAKER</div>
+                                        <div class="news-date">Selasa, 05 Juni 2018</div>
+                                    </div>
+                                    <a class="h4 news-title" href="#">
+                                        Indonesia Perjuangkan Jaminan Hak-Hak Pelaut Korban Bajak Laut
+                                    </a>
+                                    <p class="description news-description">
+                                        Jenewa-Indonesia secara tegas mendukung pengesahan amandemen Konvensi Pekerja Maritim (Maritim Labour Convention/MLC) yang mengatur jaminan hak-hak keuangan bagi pela...
+                                    </p>
+                                    <a href="#">Baca Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper">
+                                <div class="news-image col-12 col-lg-12">
+                                    <img src="images/banner.png" alt="news">
+                                </div>
+                                <div class="news-text col-12 col-lg-12">
+                                    <div class="news-info">
+                                        <div class="news-category">BERITA NAKER</div>
+                                        <div class="news-date">Selasa, 05 Juni 2018</div>
+                                    </div>
+                                    <a class="h5 news-title" href="#">
+                                        Indonesia Perjuangkan Jaminan Hak-Hak Pelaut Korban Bajak Laut
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper">
+                                <div class="news-image col-12 col-lg-12">
+                                    <img src="images/banner.png" alt="news">
+                                </div>
+                                <div class="news-text col-12 col-lg-12">
+                                    <div class="news-info">
+                                        <div class="news-category">BERITA NAKER</div>
+                                        <div class="news-date">Selasa, 05 Juni 2018</div>
+                                    </div>
+                                    <a class="h5 news-title" href="#">
+                                        Indonesia Perjuangkan Jaminan Hak-Hak Pelaut Korban Bajak Laut
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="wrapper">
+                                <div class="news-image col-12 col-lg-12">
+                                    <img src="images/banner.png" alt="news">
+                                </div>
+                                <div class="news-text col-12 col-lg-12">
+                                    <div class="news-info">
+                                        <div class="news-category">BERITA NAKER</div>
+                                        <div class="news-date">Selasa, 05 Juni 2018</div>
+                                    </div>
+                                    <a class="h5 news-title" href="#">
+                                        Indonesia Perjuangkan Jaminan Hak-Hak Pelaut Korban Bajak Laut
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="social">
+            <div class="container">
+                <div class="social-header d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-between flex-column flex-lg-row">
+                    <div class="left">
+                        <h2>Sosial Media</h2>
+                        <p class="description news-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br> Commodi dolorum et maxime minus,
+                            obcaecati.
+                        </p>
+                    </div>
+                    <div class="right social-icon">
+                        <ul class="row">
+                            <li id="facebook"><a href="#" style="background-image:url('images/facebook.png')"></a></li>
+                            <li id="twitter"><a href="#" style="background-image:url('images/twitter.png')"></a></li>
+                            <li id="instagram"><a href="#" style="background-image:url('images/instagram.png')"></a></li>
+                            <li id="youtube"><a href="#" style="background-image:url('images/youtube.png')"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row row-content">
+                    <div class="wrapper" id="child-1">
+                        <div class="social-image">
+                            <img src="images/banner.png" alt="social">
+                        </div>
+                        <div class="social-text">
+                            <div class="description social-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi dolor ea, eum expedita id?
+                            </div>
+                            <div class="social-footer">
+                                <i class="fab fa-twitter"></i><div class="social-tag">@kemenaker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="child-2">
+                        <div class="social-text">
+                            <div class="description social-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi dolor ea, eum expedita id? Accusamus animi dolor ea, eum expedita id? Accusamus animi dolor ea, eum expedita id?
+                            </div>
+                            <div class="social-footer">
+                                <i class="fab fa-twitter"></i><div class="social-tag">@kemenaker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper full" id="child-3">
+                        <div class="social-image">
+                            <img src="images/banner.png" alt="social">
+                        </div>
+                        <div class="social-text">
+                            <div class="social-footer">
+                                <i class="fab fa-instagram"></i><div class="social-tag">@kemenaker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="child-4">
+                        <div class="social-text">
+                            <div class="description social-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi dolor ea?
+                            </div>
+                            <div class="social-footer">
+                                <i class="fab fa-twitter"></i><div class="social-tag">@kemenaker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper full" id="child-5">
+                        <div class="social-image">
+                            <img src="images/banner.png" alt="social">
+                        </div>
+                        <div class="social-text">
+                            <div class="social-footer">
+                                <i class="fab fa-youtube"></i><div class="social-tag">KemnakerIndonesia</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper" id="child-6">
+                        <div class="social-text">
+                            <div class="description social-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus animi dolor ea?
+                            </div>
+                            <div class="social-footer">
+                                <i class="fab fa-twitter"></i><div class="social-tag">@kemenaker</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapper full" id="child-7">
+                        <div class="social-image">
+                            <img src="images/banner.png" alt="social">
+                        </div>
+                        <div class="social-text">
+                            <div class="social-footer">
+                                <i class="fab fa-instagram"></i><div class="social-tag">@kemenaker</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container">
-            <div class="d-flex align-items-end justify-content-between">
+            <div class="d-flex text-center text-lg-left align-items-center align-items-lg-end justify-content-between flex-column flex-lg-row">
                 <div>
-                    <img class="logo" src="images/logo.png"/>
+                    <a href="index.html">
+                        <img class="logo" src="images/logo.png"/>
+                    </a>
                     <p>
                         Jl. Jendral Gatot Subroto Kav. 51, Daerah Khusus<br/>
                         Ibukota Jakarta 12750, Indonesia
                     </p>
-                    <span class="phone">Telp: 021-5255733</span>
-                    <span class="call-center">Call Center: 021-5255733</span>
+                    <div class="d-flex flex-column flex-lg-row row">
+                        <div class="phone">Telp: 021-5255733</div>
+                        <div class="call-center">Call Center: 021-5255733</div>
+                    </div>
                 </div>
-                <div>
-                    <a href="#">Tentang Kemnaker</a>
-                    <a href="#">Info Alamat</a>
-                    <a href="#">Kontak</a>
-                    <a href="#">Sitemap</a>
-                    <a href="#">FAQ</a>
+                <div class="d-flex flex-column align-items-center align-items-lg-end mt-4">
+                    <div class="right social-icon">
+                        <ul class="row">
+                            <li id="facebook-1"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li id="twitter-1"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li id="instagram-1"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li id="youtube-1"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#">Tentang Kemnaker</a>
+                        <a href="#">Info Alamat</a>
+                        <a href="#">Kontak</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">FAQ</a>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex flex-row">
+            <div class="d-flex flex-row text-center text-lg-left">
                 Kementerian Ketenagakerjaan Republik Indonesia © 2018 • Hak Cipta Dilindungi Undang-Undang.
             </div>
         </div>
     </footer>
-<script type="text/javascript" src="dist/bundle.js"></script>
+    <!--Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--Map-->
+    <script src="https://www.amcharts.com/lib/3/ammap.js"></script>
+    <script src="https://www.amcharts.com/lib/3/maps/js/indonesiaLow.js"></script>
+
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script type="text/javascript" src="dist/script.js"></script>
 </body>
 </html>
